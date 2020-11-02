@@ -24,9 +24,11 @@
             </div>
 
             <div>
-                <button type="button" class="btn btn-dark mb-2">Choose Files</button>
+                <p>Select file to upload:</p>
+                <!-- <button @click="d" class="btn btn-dark mb-2">Choose Files</button> -->
             </div>
-
+            <input type="file" multiple :name="uploadFieldName" :disabled="isSaving" @change="filesChange($event.target.name, $event.target.files); fileCount = $event.target.files.length"
+            accept="image/*" class="input-file">
             <button @click="savePost" class="btn btn-success">Submit</button>
         </div>
 

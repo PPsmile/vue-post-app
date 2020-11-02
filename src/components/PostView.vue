@@ -10,6 +10,7 @@
             </div>
             <div class="card-body">
                 <div class="card-text">{{ post.content }}</div>
+                <img :src="post.attachments[0].asset_url" alt="" />
             </div>
       </div>
   </div>
