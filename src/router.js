@@ -29,7 +29,8 @@ export default new Router({
     },
     {
       path:"/mypost",
-      name:"mypost"
+      name:"mypost",
+      component: () => import("./pages/Posts/myPost")
     }
   ]
 });

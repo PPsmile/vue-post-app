@@ -24,7 +24,7 @@
             </div>
 
             <div>
-                <button type="button" class="btn btn-dark mb-2">Chosse Files</button>
+                <button type="button" class="btn btn-dark mb-2">Choose Files</button>
             </div>
 
             <button @click="savePost" class="btn btn-success">Submit</button>

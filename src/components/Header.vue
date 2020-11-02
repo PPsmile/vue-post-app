@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <nav class="navbar navbar-expand navbar-dark bg-dark">
-            <router-link to="/" class="navbar-brand">CSKU</router-link>
+            <router-link to="/" class="navbar-brand"><img src="https://ci5.googleusercontent.com/proxy/hF63XQVvMm64OX7Sku6E6BEBzw7og6BAShsBJfWnF45nWGUge1HsCIrWUJxdYJHFm-YHLrd9bhk3mfiNHSqOmVcQc0lsyhqca_qArNWXBrZ6iLlOLZbu__kZY5OzECJsSEOBdvOrWuJ0Kl8eZgB4imC8IxpeOdb6=s0-d-e1-ft#https://www.freelogodesign.org/file/app/client/thumb/ef389ec0-1132-45b7-9dcc-98908facbe36_200x200.png" width="60" height="60"></router-link>
             <div class="navbar-nav mr-auto" >
                 <li class="nav-item" v-if="user">
                     <router-link to="/posts" class="nav-link">All Posts</router-link>
