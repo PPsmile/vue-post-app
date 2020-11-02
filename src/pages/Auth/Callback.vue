@@ -15,7 +15,7 @@ export default {
         async init() {
             await this.loginWithCode(this.$route.query.code)
             // router.push({name: 'posts'})
-        },
+        }
 
     },
     mounted() {

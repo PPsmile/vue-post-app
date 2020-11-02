@@ -61,7 +61,7 @@ export default {
             posts: [],
             currentPost: null,
             currentIndex: -1,
-            title: ""
+            topic: ""
         }
     },
     computed: {

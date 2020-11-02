@@ -10,7 +10,7 @@
                     <router-link to="/add" class="nav-link">Add Post</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/mypost" class="nav-link">my Post</router-link>
+                    <router-link to="/mypost" class="nav-link">My Post</router-link>
                 </li>
             </div>
             <div class="navbar-nav">
