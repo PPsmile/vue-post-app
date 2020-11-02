@@ -39,12 +39,29 @@ export default {
     methods: {
         ...mapActions('account', ['logout']),
         login(e) {
+            this.$fire({
+            title: "Login Success",
+            text: "Welcome to Post",
+            type: "success",
+            timer: 3000
+            }).then(r => {
+            console.log(r.value);
             e.preventDefault();
             AuthenService.login()
+            });
+
         },
         handleLogout(e) {
             e.preventDefault();
             this.logout()
+            this.$fire({
+            title: "Logout",
+            text: "You logout",
+            type: "error",
+            timer: 3000
+            }).then(r => {
+            console.log(r.value);
+            });
         }
     }
 }
