@@ -1,24 +1,14 @@
 # posts-app
+-กลุ่ม พีเคน 
+-ระบบรวบรวมชีทสรุปวิชาอัจฉริยะ 
+-นาย ปาริญ ฮอปเปอร์ 6010450420 
+-นาย พิชญุตม์ ยิ้มใหญ่ 6010450527 
+-สร้างโพส,อัพโหลดไฟล์,แก้ไขโพส
 
 ## Project setup
-```
-yarn install
-```
+-yarn install หรือ npm install
+-เอา CLIENT_ID กับ Client_SECRET จากในไฟล์ keys ใน laravel มาใส่
+-npm run serve
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
