@@ -3,18 +3,18 @@
         <div class="list row">
             <div class="col-md-8">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search by topic"
+                    <input type="text" class="form-control" placeholder="Search by subject"
                             v-model="topic"/>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button"
+                        <button class="btn btn-outline-warning" type="button"
                             @click="searchTopic">
                             Search
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h4>Posts List</h4>
+            <div class="col-md-6 mt-3">
+                <h4 class="text-white">Subject List</h4>
                 <ul class="list-group all-posts" v-if="posts">
                     <li class="list-group-item"
                         :class="{ active: index == currentIndex }"
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-6">
                 <div v-if="currentPost">
-                    <h4>Post</h4>
+                    <h4 class="text-white">Subject</h4>
 
                     <post-view :post="currentPost"></post-view>
 
@@ -42,7 +42,7 @@
                 </div>
                 <div v-else>
                     <br />
-                    <p>Please click on a Post...</p>
+                    <p class="text-white">Subject Preview...</p>
                 </div>
             </div>
         </div>

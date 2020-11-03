@@ -3,6 +3,10 @@
         <div>
             <h1>My Post</h1>
         </div>
+        <h5>
+            test {{ post.topic }}
+        </h5>
+        
     </div>
 </template>
 

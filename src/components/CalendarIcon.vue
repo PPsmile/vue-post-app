@@ -44,8 +44,8 @@ time.icon strong
     top: 0;
     padding: 0.1em 0;
     color: #fff;
-    background-color: #fd9f1b;
-    border-bottom: 1px dashed #f37302;
+    background-color: red;
+    border-bottom: 1px dashed red;
     box-shadow: 0 2px 0 #fd9f1b;
 }
 
