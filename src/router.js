@@ -27,10 +27,10 @@ export default new Router({
       name: "callback",
       component: () => import("./pages/Auth/Callback")
     },
-    {
-      path:"/mypost",
-      name:"mypost",
-      component: () => import("./pages/Posts/myPost")
-    }
+    // {
+    //   path:"/mypost",
+    //   name:"mypost",
+    //   component: () => import("./pages/Posts/myPost")
+    // }
   ]
 });

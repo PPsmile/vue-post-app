@@ -9,9 +9,9 @@
                 <li class="nav-item" v-if="user">
                     <router-link to="/add" class="nav-link">Add Post</router-link>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <router-link to="/mypost" class="nav-link">My Post</router-link>
-                </li>
+                </li> -->
             </div>
             <div class="navbar-nav">
                 <li class="nav-item" v-if="!user">
