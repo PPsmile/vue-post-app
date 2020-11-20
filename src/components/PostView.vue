@@ -7,6 +7,7 @@
                         {{ post.created_at | moment("from") }}
                     </p>
                     <p>By {{ post.user.name }}</p>
+                    <p>View {{ post.view_count }}</p>
             </div>
             <div class="card-body">
                 <div class="card-text">{{ post.content }}</div>
