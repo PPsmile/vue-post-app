@@ -19,12 +19,76 @@
                 </div>
             </div>
       </div>
+<!-- ------------------------------------------------------- -->
+        <div class="form-group" id="root">
+            <label class="text-white mt-3">แสดงความคิดเห็น</label><br>
+            <textarea class="form-control" v-model="newComment" @keyup.enter="addComment"></textarea><br>
+            <button class="form-control btn btn-primary" @click="addComment">+ Add </button>
+            <div class="card mt-3">
+            <ul>
+                <li v-for="comment in comments" :key="comment.name">{{comment.name}} </li>
+            </ul>
+            </div>
+
+        </div>
+
   </div>
 </template>
 
 <script>
 export default {
-    props: ['post']
+    name:'root',
+    props: ['post'],
+    data(){
+        return {
+            comments: [
+          
+            ],
+            newComment: ''
+        }
+    },
+    methods: {
+       addComment:function(){
+        if(this.newComment != ''){
+        this.$fire({
+        title: "Post comment!!",
+        text: "Post success",
+        type: "success",
+        timer: 3000
+        }).then(r => {
+            this.comments.push({name:this.newComment})
+           this.newComment = ''
+        console.log(r.value);
+        });
+        }else{
+                    this.$fire({
+        title: "You Can't post comment!!",
+        text: "plese comment your comment",
+        type: "warning",
+        timer: 3000
+        }).then(r => {
+        console.log(r.value);
+        });
+        }
+
+
+
+       } ,
+        // simpleAlert(){
+        // this.$fire({
+        // title: "Post comment!!",
+        // text: "Post success",
+        // type: "success",
+        // timer: 3000
+        // }).then(r => {
+        // console.log(r.value);
+        // });
+        // }
+    }
+
+
+    
+
 }
 </script>
 

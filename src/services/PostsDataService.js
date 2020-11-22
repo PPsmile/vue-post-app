@@ -26,5 +26,14 @@ class PostsDataService {
     }
 
 }
+
+// class CommentsDataSevice {
+//   getAll(){
+//     return http.get("comments");
+//   }
+//   get(id){
+//     return http.get(`/comments`)
+//   }
+// }
   
 export default new PostsDataService();
